@@ -89,10 +89,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Fireball, function (sprite, othe
 function startLevel () {
     if (current_level == 0) {
         tiles.setTilemap(tilemap`level_1`)
-    } else if (current_level == 1) {
-        tiles.setTilemap(tilemap`level_0`)
-    } else if (current_level == 2) {
-        tiles.setTilemap(tilemap`level`)
     } else {
         game.over(true)
     }
